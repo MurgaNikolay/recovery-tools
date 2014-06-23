@@ -1,0 +1,19 @@
+
+
+data_dir: ../mysql_old/zabbix
+result_dir: ../results
+innodb_tools: ../innodb-tools
+exclude:
+  - history
+  - image
+schema_database:
+  host: localhost
+  user: root
+  password: root_pwd
+  database: zabbix
+
+import_database:
+  host: localhost
+  user: root
+  password: root_pwd
+  database: zabbix_restore
